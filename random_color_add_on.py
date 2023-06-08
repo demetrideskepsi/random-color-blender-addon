@@ -7,12 +7,12 @@ bl_info = {
     "name": "Randomize Color",
     "blender": (2, 80, 0),
     "category": "Object",
-    "location": "3D View > UI > Randomize Object(s) Color",
+    "location": "3D View > UI > Randomize Material",
 }
 
 class ROCLayout(bpy.types.Panel):
     """Creates a Panel in the scene context of the properties editor"""
-    bl_label = "Randomize Object(s) Color"
+    bl_label = "Randomize Material"
     bl_idname = "ROC_layout"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
@@ -24,14 +24,14 @@ class ROCLayout(bpy.types.Panel):
         
         
         # Big render button
-        layout.label(text="Randomize Object(s) Color:")
+        layout.label(text="Material Properties:")
         row = layout.row()
         row.scale_y = 1.0
         row.operator("object.randomize_color")
 
 class RandomizeColor(bpy.types.Operator):
     bl_idname = "object.randomize_color"
-    bl_label = "Randomize Object(s) Color"
+    bl_label = "Randomize Color"
     #bl_options = {'REGISTER','UNDO'}
 
     def execute(self, context):
@@ -83,6 +83,7 @@ def unregister():
 
 if __name__ == "__main__":
     register()
+
 
 """
 SOURCES:
