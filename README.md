@@ -1,9 +1,9 @@
 # Randomize Object(s) Color blender-addon
 
-Simply select the object or objects you want to change the color of, hit 'N' to open the sidebar, and navigate to the 'Randomize Color' addon, then click Randomize Object(s) Color.
+Simply select the object or objects you want to change the color of, hit 'N' to open the sidebar, and navigate to the 'Randomize Color' addon, then click Randomize Object(s) Color. <br>
 ![image](https://github.com/demetrideskepsi/random-color-blender-addon/assets/135911577/70e5cb89-8ccf-4015-ba05-85b9a09a67a0)
 
-To see the color changes you need to be in 'Material Preview' view; press 'Z', then '2' and you'll be in that view, screenshot below.
+To see the color changes you need to be in 'Material Preview' view; press 'Z', then '2' and you'll be in that view, screenshot below. <br>
 ![image](https://github.com/demetrideskepsi/random-color-blender-addon/assets/135911577/e9104011-7801-4780-a59b-f2f50712df7c)
 
 Currently changing the color will recreate the the Active Material, better known as Materials.
