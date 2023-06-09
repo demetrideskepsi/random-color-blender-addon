@@ -4,7 +4,7 @@ import random
 # put this addon in the 'sidebar'
 
 bl_info = {
-    "name": "Randomize Color",
+    "name": "Randomize Material",
     "blender": (2, 80, 0),
     "category": "Object",
     "location": "3D View > UI > Randomize Material",
@@ -16,7 +16,7 @@ class ROCLayout(bpy.types.Panel):
     bl_idname = "ROC_layout"
     bl_space_type = 'VIEW_3D'
     bl_region_type = 'UI'
-    bl_category = "Randomize Color"
+    bl_category = "Randomize Material"
 
     def draw(self, context):
         layout = self.layout
@@ -31,7 +31,7 @@ class ROCLayout(bpy.types.Panel):
 
 class RandomizeColor(bpy.types.Operator):
     bl_idname = "object.randomize_color"
-    bl_label = "Randomize Color"
+    bl_label = "Color"
     #bl_options = {'REGISTER','UNDO'}
 
     def execute(self, context):
@@ -42,7 +42,7 @@ class RandomizeColor(bpy.types.Operator):
         b = float(rgb[2])
 
         # iterate over selected objects
-        random_color = bpy.data.materials.new("Random Color")
+        random_color = bpy.data.materials.new("Randomize Material")
        
         random_color.use_nodes = True
         tree = random_color.node_tree
